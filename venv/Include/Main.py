@@ -4,7 +4,7 @@ import requests
 ## Trazer o prefixo de telefone do Brasil Por Isso Passa a Tag BR
 url = "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso"
 
-# Retorna o Prefixo de Telefone passando Sigle BR (Brasil)
+# Retorna o Prefixo de Telefone passando Sigla BR (Brasil)
 payload = """<?xml version=\"1.0\" encoding=\"utf-8\"?>
             <soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">
                 <soap:Body>
@@ -15,7 +15,7 @@ payload = """<?xml version=\"1.0\" encoding=\"utf-8\"?>
             </soap:Envelope>"""
 
 
-#Retorna o Nome do Pais passando Sigla PT
+#Retorna a capital do Pais passando Sigla PT
 payload2 = """<?xml version=\"1.0\" encoding=\"utf-8\"?>
 <soap12:Envelope xmlns:soap12=\"http://www.w3.org/2003/05/soap-envelope\">
   <soap12:Body>
@@ -26,7 +26,7 @@ payload2 = """<?xml version=\"1.0\" encoding=\"utf-8\"?>
 </soap12:Envelope>
 """
 
-#Retonar a Capital do Brasil passando Sigla BR
+#Lista todos os Paises
 payload3 = """<?xml version=\"1.0\" encoding=\"utf-8\"?>
 <soap12:Envelope xmlns:soap12=\"http://www.w3.org/2003/05/soap-envelope\">
   <soap12:Body>
